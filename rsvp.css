@@ -1,0 +1,48 @@
+/* CSS declarations go here */
+#eventURL {
+	border-radius: 0;
+	box-shadow: none;
+	border: none;
+	text-align: center;
+	font-size: 3em;
+	height: auto;
+}
+
+#createEvent {
+	font-size: 4em;
+	font-weight: 100;
+	background-color: #f05a24;
+	border: none;
+}
+
+.share {
+	font-style: italic;
+	color: #ccc;
+	font-size: 1em;
+}
+
+#createEvent:hover {
+	background-color: #ea4a10;
+	border: none;
+}
+
+h1#count {
+	color: #ccc;
+	font-size: 14em;
+}
+
+h3.attending{
+	color: #333;
+	font-size:2em;
+	font-weight: 300;
+}
+
+@media(max-width: 768px){
+	#createEvent {
+		font-size: 3em;
+	}
+
+	#eventURL {
+		font-size: 2em;
+	}
+}

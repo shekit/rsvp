@@ -1,0 +1,44 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<template name="main">
+	<div class="container">
+		{{> yield}}
+	</div>
+</template>
+
+<template name="home">
+	<br><br><br><br>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-sm-12 col-md-6 text-center">
+			<a href="#" class="btn btn-lg btn-primary btn-block" id="createEvent">Create Event</a><br>
+			<input type="text" class="form-control input-lg input-block" name="eventURL" id="eventURL" value="">
+			<p class="share"></p>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+	
+</template>
+
+<template name="eventPage">
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-sm-12 col-md-6 text-center">
+			<h1 id="count"> {{count}} </h1>
+			<h3 class="attending">attending</h3>
+			<br><br><br>
+			<a href="#" class="btn btn-md btn-default" id="notAttending">I'm here by mistake</a>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+</template>
+
+<template name="loading">
+<div class="row">
+	<div class="col-sm-12 text-center">
+		<p>Loading...</p>
+	</div>
+</div>
+</template>
